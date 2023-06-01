@@ -12,22 +12,22 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Mrs4s/MiraiGo/binary"
-	"github.com/Mrs4s/MiraiGo/client"
-	"github.com/Mrs4s/MiraiGo/message"
-	"github.com/Mrs4s/MiraiGo/utils"
+	"github.com/TeaBoss-Developer/MiraiGo/binary"
+	"github.com/TeaBoss-Developer/MiraiGo/client"
+	"github.com/TeaBoss-Developer/MiraiGo/message"
+	"github.com/TeaBoss-Developer/MiraiGo/utils"
 	"github.com/RomiChan/syncx"
 	"github.com/pkg/errors"
 	"github.com/segmentio/asm/base64"
 	log "github.com/sirupsen/logrus"
 	"golang.org/x/image/webp"
 
-	"github.com/Mrs4s/go-cqhttp/db"
-	"github.com/Mrs4s/go-cqhttp/global"
-	"github.com/Mrs4s/go-cqhttp/internal/base"
-	"github.com/Mrs4s/go-cqhttp/internal/mime"
-	"github.com/Mrs4s/go-cqhttp/internal/msg"
-	"github.com/Mrs4s/go-cqhttp/pkg/onebot"
+	"github.com/TeaBoss-Developer/go-cqhttp/db"
+	"github.com/TeaBoss-Developer/go-cqhttp/global"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/base"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/mime"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/msg"
+	"github.com/TeaBoss-Developer/go-cqhttp/pkg/onebot"
 )
 
 // CQBot CQBot结构体,存储Bot实例相关配置
@@ -376,7 +376,7 @@ func (bot *CQBot) SendPrivateMessage(target int64, groupID int64, m *message.Sen
 				msg := bot.Client.SendGroupTempMessage(groupID, target, m)
 				//lint:ignore SA9003 there is a todo
 				if msg != nil { // nolint
-					// todo(Mrs4s)
+					// todo(TeaBoss-Developer)
 					// id = bot.InsertTempMessage(target, msg)
 				}
 				break
@@ -388,7 +388,7 @@ func (bot *CQBot) SendPrivateMessage(target int64, groupID int64, m *message.Sen
 			}
 			//lint:ignore SA9003 there is a todo
 			if msg != nil { // nolint
-				// todo(Mrs4s)
+				// todo(TeaBoss-Developer)
 				// id = bot.InsertTempMessage(target, msg)
 			}
 		}

@@ -9,7 +9,7 @@ import (
 	"math/rand"
 	"unsafe"
 
-	"github.com/Mrs4s/go-cqhttp/internal/encryption"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/encryption"
 )
 
 const (

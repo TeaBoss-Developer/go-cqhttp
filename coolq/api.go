@@ -14,23 +14,23 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Mrs4s/MiraiGo/binary"
-	"github.com/Mrs4s/MiraiGo/client"
-	"github.com/Mrs4s/MiraiGo/message"
-	"github.com/Mrs4s/MiraiGo/utils"
+	"github.com/TeaBoss-Developer/MiraiGo/binary"
+	"github.com/TeaBoss-Developer/MiraiGo/client"
+	"github.com/TeaBoss-Developer/MiraiGo/message"
+	"github.com/TeaBoss-Developer/MiraiGo/utils"
 	"github.com/segmentio/asm/base64"
 	log "github.com/sirupsen/logrus"
 	"github.com/tidwall/gjson"
 
-	"github.com/Mrs4s/go-cqhttp/db"
-	"github.com/Mrs4s/go-cqhttp/global"
-	"github.com/Mrs4s/go-cqhttp/internal/base"
-	"github.com/Mrs4s/go-cqhttp/internal/cache"
-	"github.com/Mrs4s/go-cqhttp/internal/download"
-	"github.com/Mrs4s/go-cqhttp/internal/msg"
-	"github.com/Mrs4s/go-cqhttp/internal/param"
-	"github.com/Mrs4s/go-cqhttp/modules/filter"
-	"github.com/Mrs4s/go-cqhttp/pkg/onebot"
+	"github.com/TeaBoss-Developer/go-cqhttp/db"
+	"github.com/TeaBoss-Developer/go-cqhttp/global"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/base"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/cache"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/download"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/msg"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/param"
+	"github.com/TeaBoss-Developer/go-cqhttp/modules/filter"
+	"github.com/TeaBoss-Developer/go-cqhttp/pkg/onebot"
 )
 
 type guildMemberPageToken struct {
@@ -1748,7 +1748,7 @@ func (bot *CQBot) CQGetGuildMessage(messageID string, noCache bool) global.MSG {
 			m["message"] = ToFormattedMessage(bot.ConvertContentMessage(channelMsgByDB.Content, message.SourceGuildChannel), source)
 		}
 	case message.SourceGuildDirect:
-		// todo(mrs4s): 支持 direct 消息
+		// todo(TeaBoss-Developer): 支持 direct 消息
 		m["tiny_id"] = fU64(uint64(source.SecondaryID))
 	}
 	return OK(m)

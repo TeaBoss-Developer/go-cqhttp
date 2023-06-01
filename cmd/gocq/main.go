@@ -12,8 +12,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Mrs4s/MiraiGo/binary"
-	"github.com/Mrs4s/MiraiGo/client"
+	"github.com/TeaBoss-Developer/MiraiGo/binary"
+	"github.com/TeaBoss-Developer/MiraiGo/client"
 	para "github.com/fumiama/go-hide-param"
 	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
 	"github.com/pkg/errors"
@@ -22,18 +22,18 @@ import (
 	"golang.org/x/crypto/pbkdf2"
 	"golang.org/x/term"
 
-	"github.com/Mrs4s/go-cqhttp/internal/download"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/download"
 
-	"github.com/Mrs4s/go-cqhttp/coolq"
-	"github.com/Mrs4s/go-cqhttp/db"
-	"github.com/Mrs4s/go-cqhttp/global"
-	"github.com/Mrs4s/go-cqhttp/global/terminal"
-	"github.com/Mrs4s/go-cqhttp/internal/base"
-	"github.com/Mrs4s/go-cqhttp/internal/cache"
-	"github.com/Mrs4s/go-cqhttp/internal/selfdiagnosis"
-	"github.com/Mrs4s/go-cqhttp/internal/selfupdate"
-	"github.com/Mrs4s/go-cqhttp/modules/servers"
-	"github.com/Mrs4s/go-cqhttp/server"
+	"github.com/TeaBoss-Developer/go-cqhttp/coolq"
+	"github.com/TeaBoss-Developer/go-cqhttp/db"
+	"github.com/TeaBoss-Developer/go-cqhttp/global"
+	"github.com/TeaBoss-Developer/go-cqhttp/global/terminal"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/base"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/cache"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/selfdiagnosis"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/selfupdate"
+	"github.com/TeaBoss-Developer/go-cqhttp/modules/servers"
+	"github.com/TeaBoss-Developer/go-cqhttp/server"
 )
 
 // 允许通过配置文件设置的状态列表

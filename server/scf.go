@@ -11,14 +11,14 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"github.com/Mrs4s/MiraiGo/utils"
+	"github.com/TeaBoss-Developer/MiraiGo/utils"
 	log "github.com/sirupsen/logrus"
 	"gopkg.in/yaml.v3"
 
-	"github.com/Mrs4s/go-cqhttp/coolq"
-	"github.com/Mrs4s/go-cqhttp/global"
-	api2 "github.com/Mrs4s/go-cqhttp/modules/api"
-	"github.com/Mrs4s/go-cqhttp/modules/config"
+	"github.com/TeaBoss-Developer/go-cqhttp/coolq"
+	"github.com/TeaBoss-Developer/go-cqhttp/global"
+	api2 "github.com/TeaBoss-Developer/go-cqhttp/modules/api"
+	"github.com/TeaBoss-Developer/go-cqhttp/modules/config"
 )
 
 type lambdaClient struct {

@@ -8,7 +8,7 @@ import (
 
 	"golang.org/x/sys/windows"
 
-	"github.com/Mrs4s/go-cqhttp/internal/base"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/base"
 )
 
 func setConsoleTitle(title string) error {
@@ -25,5 +25,5 @@ func setConsoleTitle(title string) error {
 
 // SetTitle 设置标题为 go-cqhttp `版本` `版权`
 func SetTitle() {
-	_ = setConsoleTitle(fmt.Sprintf("go-cqhttp "+base.Version+" © 2020 - %d Mrs4s", time.Now().Year()))
+	_ = setConsoleTitle(fmt.Sprintf("go-cqhttp "+base.Version+" © 2020 - %d TeaBoss-Developer", time.Now().Year()))
 }

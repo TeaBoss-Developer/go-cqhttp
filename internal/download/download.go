@@ -17,7 +17,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/tidwall/gjson"
 
-	"github.com/Mrs4s/go-cqhttp/internal/base"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/base"
 )
 
 var client = &http.Client{

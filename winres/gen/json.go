@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Mrs4s/go-cqhttp/internal/base"
+	"github.com/TeaBoss-Developer/go-cqhttp/internal/base"
 )
 
 const js = `{
@@ -57,11 +57,11 @@ const js = `{
         "info": {
           "0409": {
             "Comments": "Golang implementation of cqhttp.",
-            "CompanyName": "Mrs4s",
-            "FileDescription": "https://github.com/Mrs4s/go-cqhttp",
+            "CompanyName": "TeaBoss-Developer",
+            "FileDescription": "https://github.com/TeaBoss-Developer/go-cqhttp",
             "FileVersion": "%s",
             "InternalName": "",
-            "LegalCopyright": "©️ 2020 - %d Mrs4s. All Rights Reserved.",
+            "LegalCopyright": "©️ 2020 - %d TeaBoss-Developer. All Rights Reserved.",
             "LegalTrademarks": "",
             "OriginalFilename": "GOCQHTTP.EXE",
             "PrivateBuild": "",
